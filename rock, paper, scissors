@@ -1,23 +1,25 @@
-import random
+# Importing random to generate the computer's choice
+import random  
 
+# creating a loop for the game
 while True:
     user = input("Choose Rock, Paper, or Scissors: ").capitalize()
+    
+    # Tcreating a variable to make the computer randonly select one
     computer = random.choice(['Rock', 'Paper', 'Scissors'])
 
+    # generate an if,elif statement to compare the choices
     if user == computer:
-        print(f"Both chose {user}. It's a draw!")
+        print(f"Both chose {user}. It's a draw!")  # If both choices are the same, it's a draw
     elif (user == 'Rock' and computer == 'Scissors') or \
          (user == 'Paper' and computer == 'Rock') or \
          (user == 'Scissors' and computer == 'Paper'):
-        print(f"You chose {user}, computer chose {computer}. You win!")
+        print(f"You chose {user}, computer chose {computer}. You win!")  
     else:
-        print(f"You chose {user}, computer chose {computer}. You lose!")
+        print(f"You chose {user}, computer chose {computer}. You lose!") 
 
+    # To play again?
     if input("Play again? (yes/no): ").lower() != 'yes':
-        break
+        break  # Stop the loop if  user doesn't type 'yes'
 
 print("Thanks for playing!")
-
-
-
-
