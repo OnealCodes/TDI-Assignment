@@ -1,0 +1,23 @@
+import random
+
+while True:
+    user = input("Choose Rock, Paper, or Scissors: ").capitalize()
+    computer = random.choice(['Rock', 'Paper', 'Scissors'])
+
+    if user == computer:
+        print(f"Both chose {user}. It's a draw!")
+    elif (user == 'Rock' and computer == 'Scissors') or \
+         (user == 'Paper' and computer == 'Rock') or \
+         (user == 'Scissors' and computer == 'Paper'):
+        print(f"You chose {user}, computer chose {computer}. You win!")
+    else:
+        print(f"You chose {user}, computer chose {computer}. You lose!")
+
+    if input("Play again? (yes/no): ").lower() != 'yes':
+        break
+
+print("Thanks for playing!")
+
+
+
+
