@@ -1,4 +1,4 @@
-﻿# TDI-Assignment
+﻿# TDI-Game
 ###  Rock Paper Scissors Game:
     Objective: Create a Rock Paper Scissors game where the user plays against the computer.
     Instructions:
