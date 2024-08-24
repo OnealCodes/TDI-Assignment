@@ -1,4 +1,4 @@
-﻿# TDI-Game
+﻿# TDI
 ###  Rock Paper Scissors Game:
     Objective: Create a Rock Paper Scissors game where the user plays against the computer.
     Instructions:
@@ -19,3 +19,9 @@
          If the guess is too low, prompt the player to guess a higher number.
      4. Display whether the player has won or lost after 3 attempts.
      5. Ask the player if they want to play again and restart the game if they choose to continue.
+
+
+
+### Employee Contact Book Application
+   Objective:
+    To develop a reliable, user-friendly Python application that manages and displays employee contact information while ensuring data accuracy and uniqueness.
