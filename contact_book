@@ -1,0 +1,41 @@
+# Store employee data as a list of dictionaries
+employees = []
+
+# Function to add a new employee
+def add_employee(empID, first_name, last_name, phone_number, email, address):
+    # Check for unique empID, phone_number, and email
+    for emp in employees:
+        if emp['empID'] == empID:
+            print(f"Employee ID {empID} already exists.")
+            return
+        if emp['phone_number'] == phone_number:
+            print(f"Phone number {phone_number} is already in use.")
+            return
+        if emp['email'] == email:
+            print(f"Email {email} is already in use.")
+            return
+    
+    # Add the employee to the list
+    employee = {
+        'empID': empID,
+        'first_name': first_name,
+        'last_name': last_name,
+        'phone_number': phone_number,
+        'email': email,
+        'address': address
+    }
+    employees.append(employee)
+    print(f"Employee {first_name} {last_name} added successfully.")
+
+# Function to display all employees
+def display_employees():
+    if not employees:
+        print("No employees found.")
+        return
+    for emp in employees:
+        print(f"{emp['empID']}: {emp['first_name']} {emp['last_name']}, Phone: {emp['phone_number']}, Email: {emp['email']}, Address: {emp['address']}")
+
+# Example Usage
+add_employee("101", "Abisola", "Oneal", "0812345678", "abisola.oneal@yahoo.co.uk", "London")
+add_employee("102", "Ade", "Ola", "0908765432", "ade.ola@yahoo.co.uk", "canada")
+display_employees()
